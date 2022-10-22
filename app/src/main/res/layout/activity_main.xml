@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/image_kotlin"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:textColor="@color/Yellow"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_plus"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="plus"
+        android:textColor="@color/Yellow"
+        android:textSize="18sp"
+        app:strokeColor="@color/Yellow"
+        app:strokeWidth="1dp"
+        app:cornerRadius="50dp"
+        android:backgroundTint="@color/glassColor"
+        app:layout_constraintTop_toBottomOf="@id/text_count"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_minus"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="minus"
+        android:textColor="@color/Yellow"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/button_plus"
+        app:layout_constraintStart_toStartOf="@id/button_plus"
+        app:layout_constraintEnd_toEndOf="@id/button_plus"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/glassColor"
+        app:strokeColor="@color/Yellow"
+        app:strokeWidth="1dp"
+        app:cornerRadius="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
